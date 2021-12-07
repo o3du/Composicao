@@ -12,6 +12,16 @@ package Composicao;
 public class Direcao {
     private String cor;
 
+    
+    public Direcao(){
+        cor = "Amarelo";
+    }
+    
+    public Direcao(String cor){
+        this.cor = cor;
+    }
+    
+    
     public String getCor() {
         return cor;
     }

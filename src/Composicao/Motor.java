@@ -12,11 +12,16 @@ package Composicao;
 public class Motor {
     int potencia;
     
+    
+    
+    
+    
     public Motor(){
         potencia=1000;//Valor padrão
     }
     public Motor(int potencia){
-        this.potencia=potencia;//Valor definido por você
+        this.potencia=potencia;
+        //Valor definido por você
     }
     
 

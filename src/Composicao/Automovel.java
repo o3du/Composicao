@@ -12,14 +12,32 @@ package Composicao;
 public class Automovel {
     private Motor motor;
     private Direcao direcao;
+
+    public Direcao getDirecao() {
+        return direcao;
+    }
+
+    public void setDirecao(Direcao direcao) {
+        this.direcao = direcao;
+    }
+
+
+   
     
-    
-    public void LPPV(){ //Metodo Ligar Pela Primeira Vez
-        motor = new Motor();
+    public void imprimirDadosCarro(){
+        System.out.println("Potência do Motor: "+motor.getPotencia());
+        System.out.println("'Cor da Direção: "+direcao.getCor());
+        
     }
     
-    public void LPPV(int potencia){
+    public void Automovel(){ //Metodo Ligar Pela Primeira Vez
+        motor = new Motor();
+        direcao = new Direcao();
+    }
+    
+    public void LPPV(int potencia, String cor){
         motor = new Motor(potencia);
+        direcao = new Direcao(cor);
     }
     
     public Automovel(){
