@@ -35,16 +35,14 @@ public class Automovel {
         direcao = new Direcao();
     }
     
-    public void LPPV(int potencia, String cor){
-        motor = new Motor(potencia);
-        direcao = new Direcao(cor);
-    }
+   
     
     public Automovel(){
         motor = new Motor();
     }
-    public Automovel(int potencia){
+    public Automovel(int potencia, String cor){
         motor = new Motor(potencia);
+        direcao = new Direcao(cor);
     }
     
     
